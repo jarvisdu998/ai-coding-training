@@ -124,14 +124,6 @@ tests/test_tasks.py::test_validation_title_too_long PASSED               [100%]
 
 ---
 
-## 🎬 交互式接口 Swagger UI 核心演示
-
-通过在本地运行 Chrome 浏览器代理，我们在 Swagger UI 中针对核心 CRUD 和高级动态联合条件执行了完整的全流程演示，数据完美联动，交互页面极其现代 premium：
-
-![Swagger UI 交互式动画](https://raw.githubusercontent.com/jarvisdu998/ai-coding-training/main/docs/api_swagger_demo.gif)
-
----
-
 ## 🤝 学习心得与 AI 协作复盘 (SDD 过程回顾)
 
 *   **契约驱动开发的威力**：常规敏捷中常常会遇到实现与需求设计偏离。通过 OpenSpec 预先建立 `proposal` 和基于 GIVEN-WHEN-THEN 的 `spec.md` 契约，使编码时的接口签名、参数约束在开发初期就得以固化，使得后续 `main.py`、`crud.py` 等的实现效率极大提高。
