@@ -12,4 +12,4 @@
 
 ## Phase 3: 测试与优化
 - [x] Task 3.1: 搭建单元与集成测试套件，在 tests/conftest.py 中配置内存 SQLite 并暴露测试客户端 Fixture
-- [ ] Task 3.2: 在 tests/test_tasks.py 中编写覆盖增删改查、多参数联合过滤、超限分页、边界排序以及异常格式的自动化用例，运行 pytest 确保 100% 通过
+- [x] Task 3.2: 在 tests/test_tasks.py 中编写覆盖增删改查、多参数联合过滤、超限分页、边界排序以及异常格式的自动化用例，运行 pytest 确保 100% 通过
