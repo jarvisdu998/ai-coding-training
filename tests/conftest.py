@@ -1,17 +1,21 @@
 import pytest
 from sqlalchemy import create_engine
+from sqlalchemy.pool import StaticPool
 from sqlalchemy.orm import sessionmaker
 from fastapi.testclient import TestClient
 
 from app.main import app
 from app.database import Base, get_db
+from app import models  # 显式导入 models 以注册 SQLAlchemy 数据表元数据
 
 # 使用 SQLite 内存数据库作为测试环境，确保每次测试执行速度极快且数据完全隔离
 SQLALCHEMY_DATABASE_URL = "sqlite:///:memory:"
 
+# 使用 StaticPool（静态连接池）强制在整个测试会话期间维持同一个连接，以保证内存表结构不因连接关闭而销毁
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL,
-    connect_args={"check_same_thread": False}
+    connect_args={"check_same_thread": False},
+    poolclass=StaticPool
 )
 
 TestingSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
