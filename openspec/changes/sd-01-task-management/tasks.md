@@ -1,7 +1,7 @@
 # Tasks: RESTful Task Management API
 
 ## Phase 1: 基础架构
-- [ ] Task 1.1: 建立项目依赖配置文件 requirements.txt 并初始化本地 Python 虚拟环境与激活
+- [x] Task 1.1: 建立项目依赖配置文件 requirements.txt 并初始化本地 Python 虚拟环境与激活
 - [ ] Task 1.2: 编写数据库连接配置模块 app/config.py 与 app/database.py，建立 SQLite 连接池并提供会话 Dependency
 
 ## Phase 2: 核心功能
