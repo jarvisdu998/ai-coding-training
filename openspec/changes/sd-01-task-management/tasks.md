@@ -6,7 +6,7 @@
 
 ## Phase 2: 核心功能
 - [x] Task 2.1: 编写 SQLAlchemy 数据表模型实体 app/models.py，映射 tasks 物理表 and 元数据定义
-- [ ] Task 2.2: 编写基于 Pydantic v2 的输入校验及出参模型 app/schemas.py，加入 Status/Priority 强枚举校验
+- [x] Task 2.2: 编写基于 Pydantic v2 的输入校验及出参模型 app/schemas.py，加入 Status/Priority 强枚举校验
 - [ ] Task 2.3: 编写核心数据库操作模块 app/crud.py，实现 CRUD、多条件联合过滤、升降序排序与 skip/limit 分页逻辑
 - [ ] Task 2.4: 编写 Web 入口层路由分发与统一异常处理器 app/main.py，关联端点并统一处理 Pydantic 校验与 404 错误响应
 
